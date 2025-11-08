@@ -1,18 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: add-task-ingress
-  annotations:
-    kubernetes.io/ingress.class: addon-http-application-routing  
+  name: todo-add-task-api-ingress
 spec:
+  ingressClassName: ingress-nginx-controller
   rules:
-  - host: add-task.devopsinsiders.online
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
+    - host: add-tasks-api.applicationtesting.online
+      http:
+        paths:
+          - pathType: Prefix
+            path: "/"
         backend:
           service:
-            name: add-task
-            port: 
+            name: todo-add-task-api
+            port:
               number: 80
