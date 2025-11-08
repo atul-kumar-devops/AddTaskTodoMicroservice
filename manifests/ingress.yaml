@@ -12,6 +12,6 @@ spec:
             path: "/"
             backend:
               service:
-                name: todo-add-task-api
+                name: todo-add-tasks-api-service
                 port:
                   number: 80
