@@ -10,8 +10,8 @@ spec:
         paths:
           - pathType: Prefix
             path: "/"
-        backend:
-          service:
-            name: todo-add-task-api
-            port:
-              number: 80
+            backend:
+              service:
+                name: todo-add-task-api
+                port:
+                  number: 80
