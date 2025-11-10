@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: todo-add-task-api-ingress
 spec:
-  ingressClassName: nginx
+  ingressClassName: agic
   rules:
     - host: add-tasks-api.applicationtesting.online
       http:
